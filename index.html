@@ -10,13 +10,19 @@
 </head>
 
 <body>
-    <div class="expensesContainer"></div>
+    <div class="expensesContainer">
     <h1>Expense Tracker</h1>
     <form id="expenseForm">
+        <div class="inputWrapper">
+        <div class="inputC">
         <label for="expenseName">Name</label>
         <input type="text" id="expenseName" placeholder="Enter expense name" required>
+        </div>
+        <div class="inputC">
         <label for="expenseAmount">Amount</label>
         <input type="number" id="expenseAmount" placeholder="Enter expense amount" required>
+        </div>
+    </div>
         <button id="addBtn">Add Expense</button>
     </form>
     <table id="expenseList">

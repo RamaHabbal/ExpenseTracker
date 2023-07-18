@@ -1,7 +1,9 @@
 .expensesContainer{
     max-width: 400px;
-    margin: 0;
+    margin: auto;
     padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(179, 160, 186);
 }
 h1{text-align: center;}
 form{
@@ -13,15 +15,26 @@ form{
 label{
     font-weight: bold;
 }
+.inputC{
+    display:flex ;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.inputWrapper{
+    display: flex;
+}
 input{
     border: 1px solid;
     padding: 5px;
+    border-radius: 5px;
 }
 #addBtn{
-    width: 180px;
-    background-color:   #00ffa2;
+    width: 70%;
+    background-color: #9a64bb;
    border: none;
-   height: 25px;
+   border-radius: 5px;
+   height: 30px;
    font-weight: bold;
    cursor: pointer;
 }
@@ -33,4 +46,11 @@ table th,
 table td {
   padding: 10px;
   text-align: center;
+}
+.deleteBtn {
+    background-color: #e0639f;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
 }

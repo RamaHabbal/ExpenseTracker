@@ -7,9 +7,19 @@ return`<tr>
 </tr>`
 
 }
+
 function totalAmount(){
     $("#totalAmount").text(total);
 }
+
+function deleteExpense(){
+    const row = $(this).closest("tr");
+    const amount = parseFloat(row.find("td:nth-child(2)").text());
+    total -= amount;
+    totalAmount();
+    row.remove();
+}
+
 function addExpense(event){
     event.preventDefault();
 
@@ -38,4 +48,5 @@ function addExpense(event){
 $(document).ready(function (){
     const addBtn = $("#addBtn");
     addBtn.click(addExpense);
+    $("#expenseList").on("click",".deleteBtn", deleteExpense)
     });
