@@ -14,9 +14,9 @@
     <h1>Expense Tracker</h1>
     <form id="expenseForm">
         <label for="expenseName">Name</label>
-        <input type="text" id="expenseName" placeholder="Enter expense name">
+        <input type="text" id="expenseName" placeholder="Enter expense name" required>
         <label for="expenseAmount">Amount</label>
-        <input type="number" id="expenseAmount" placeholder="Enter expense amount">
+        <input type="number" id="expenseAmount" placeholder="Enter expense amount" required>
         <button id="addBtn">Add Expense</button>
     </form>
     <table id="expenseList">
@@ -28,12 +28,12 @@
         </tr>
         </thead>
         <tbody>
-
+          
         </tbody>
         <tfoot>
             <tr>
                 <td>Total:</td>
-                <td id="totalAmount">0</td>
+                <td id="totalAmount"></td>
                 <td></td>
             </tr>
     
